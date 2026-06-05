@@ -1,128 +1,268 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="google-site-verification" content="jX5qkN8E3rgNWh8iSGn1IzztdrBrMSE2dgx6izjUUWM" />
-    <!-- Primary SEO -->
-    <meta name="description" content="Fardin Hussain is a frontend web developer specializing in modern websites, landing pages, and interactive tools. View projects, portfolio, and contact details.">
-    <meta name="keywords" content="Fardin Hussain, frontend developer, web developer portfolio, HTML CSS JavaScript developer, freelance web developer India, Assam web developer">
-    <meta name="author" content="Fardin Hussain">
-    <meta name="robots" content="index, follow">
-    
-    <!-- Open Graph (SEO + Social Sharing) -->
-    <meta property="og:title" content="Fardin Hussain | Frontend Web Developer Portfolio">
-    <meta property="og:description" content="Frontend web developer building aesthetic and high-performance web experiences. View projects and hire for freelance work.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://fardinhussain.netlify.app/">
-    
-    <!-- Canonical URL -->
-    <link rel="canonical" href="https://fardinhussain.netlify.app/">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="google-site-verification" content="jX5qkN8E3rgNWh8iSGn1IzztdrBrMSE2dgx6izjUUWM" />
+  <meta name="description" content="Fardin Hussain — frontend web developer from Assam, India. Building aesthetic, high-performance web experiences. View my projects and tools.">
+  <meta name="keywords" content="Fardin Hussain, frontend developer, web developer portfolio, HTML CSS JavaScript, freelance web developer India, Assam developer, TechRift AI">
+  <meta name="author" content="Fardin Hussain">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="Fardin Hussain | Frontend Developer">
+  <meta property="og:description" content="Frontend developer from Assam — I build things that look good and run fast.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://fardinhussain.netlify.app/">
+  <link rel="canonical" href="https://fardinhussain.netlify.app/">
+  <title>Fardin Hussain | Frontend Developer</title>
 
-    <title>Fardin Hussain | Frontend Web Developer Portfolio</title>
-  
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Space+Grotesk:wght@300;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-<link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,600;0,9..144,800;1,9..144,300;1,9..144,600&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <div class="bg-glow">
-        <div class="blob blob-1"></div>
-        <div class="grid-overlay"></div>
+
+  <div class="bg-layer"></div>
+
+  <nav>
+    <div class="container nav-inner">
+      <div class="logo">
+        Fardin<span>.</span>dev
+      </div>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#work">Work</a>
+        <a href="#tools">Tools</a>
+        <a href="#contact">Contact</a>
+      </div>
     </div>
+  </nav>
 
-    <nav>
-        <div class="container nav-inner">
-            <div class="logo">Fardin.dev</div>
-            <div class="nav-links">
-                <a href="#about">About</a>
-                <a href="#skills">Skills</a>
-                <a href="#work">Work</a>
-                <a href="#contact">Contact</a>
+  <section id="hero">
+    <div class="container" style="position:relative">
+      <div class="hero-inner">
+        <div class="hero-tag">
+          Available for work
+        </div>
+        <h1 class="hero-title" id="heroTitle">
+          Hi, I'm<br>
+          <em>Fardin.</em><br>
+          I build for the web.
+        </h1>
+        <p class="hero-desc">
+          Frontend developer from <strong>Assam, India</strong> — turning ideas into clean, fast, and memorable web experiences. I care about the details that most people don't notice but everyone feels.
+        </p>
+        <div class="hero-cta">
+          <a href="#work" class="btn-primary">See my work <i class="fa-solid fa-arrow-down"></i></a>
+          <a href="#contact" class="btn-ghost">Get in touch <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+      <div class="hero-scroll">
+        <span>scroll</span>
+        <i class="fa-solid fa-chevron-down" style="font-size:0.6rem"></i>
+      </div>
+    </div>
+  </section>
+
+  <style>
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: .3; }
+    }
+  </style>
+
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-label reveal">
+        <i class="fa-solid fa-circle-dot"></i> About me
+      </div>
+      <h2 class="section-title reveal">Not your average <em>developer</em></h2>
+      <div class="about-grid">
+        <div class="about-text-main reveal">
+          <p>
+            I picked up web development because I wanted to make things — real, working things that people could actually use. That itch hasn't gone away since.
+          </p>
+          <p>
+            Beyond the code, I run <span class="hl">TechRift AI & Career Services</span>, a brand I built around helping people get smarter about AI tools and navigate career decisions in tech. Two things I spend a lot of time thinking about anyway.
+          </p>
+          <p>
+            When I'm not pushing pixels or debugging at midnight, I'm usually experimenting with new tools, learning from Anthropic's ecosystem, or writing content that doesn't waste your time.
+          </p>
+        </div>
+        <div class="about-aside">
+          <div class="fact-card reveal">
+            <div class="fact-label">Based in</div>
+            <div class="fact-value">🇮🇳 Assam, India</div>
+          </div>
+          <div class="fact-card reveal">
+            <div class="fact-label">Also runs</div>
+            <div class="fact-value" style="color:var(--accent)">TechRift AI & Career Services</div>
+          </div>
+          <div class="fact-card reveal">
+            <div class="fact-label">Currently into</div>
+            <div class="fact-value">Claude, prompt engineering, building tools that solve real problems</div>
+          </div>
+          <div class="fact-card reveal">
+            <div class="fact-label">Status</div>
+            <div class="fact-value" style="display:flex;align-items:center;gap:8px">
+              <span style="display:inline-block;width:8px;height:8px;background:var(--accent);border-radius:50%;animation:pulse 2s infinite"></span>
+              Open to freelance & collaborations
             </div>
+          </div>
         </div>
-    </nav>
+      </div>
+    </div>
+  </section>
 
-    <section id="hero">
-        <div class="container">
-            <div class="hero-content">
-                <div class="hero-sup" style="font-family: var(--font-head); color: var(--accent); letter-spacing: 2px; margin-bottom: 15px; text-transform: uppercase; font-size: 0.8rem;">Available for hire</div>
-                <h1 class="hero-title">Digital <br>Architect</h1>
-                <p class="hero-desc">I build aesthetic, high-performance web experiences using modern technologies.</p>
-                
-                <a href="#work" class="btn-main">
-                    View Work <i class="fa-solid fa-arrow-down"></i>
-                </a>
+  <section id="skills" class="section" style="padding-top:0">
+    <div class="container">
+      <div class="section-label reveal">
+        <i class="fa-solid fa-circle-dot"></i> My stack
+      </div>
+      <h2 class="section-title reveal">Technologies <em>I reach for</em></h2>
+      <div class="skills-grid">
+        <div class="skill-card skill-html reveal">
+          <i class="fa-brands fa-html5"></i><span>HTML5</span>
+        </div>
+        <div class="skill-card skill-css reveal">
+          <i class="fa-brands fa-css3-alt"></i><span>CSS3</span>
+        </div>
+        <div class="skill-card skill-js reveal">
+          <i class="fa-brands fa-js"></i><span>JavaScript</span>
+        </div>
+        <div class="skill-card skill-rwd reveal">
+          <i class="fa-solid fa-mobile-screen-button"></i><span>Responsive Design</span>
+        </div>
+        <div class="skill-card skill-ai reveal">
+          <i class="fa-solid fa-robot"></i><span>AI Tools</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="work" class="section" style="padding-top:0">
+    <div class="container">
+      <div class="section-label reveal">
+        <i class="fa-solid fa-circle-dot"></i> Selected work
+      </div>
+      <h2 class="section-title reveal">Things I've <em>shipped</em></h2>
+      <div class="projects-grid">
+        <a href="https://gameforgeee.netlify.app" target="_blank" rel="noopener" class="project-card reveal">
+          <div class="project-preview">
+            <iframe src="https://gameforgeee.netlify.app" title="GameForge Preview" loading="lazy"></iframe>
+          </div>
+          <div class="project-info">
+            <div class="project-meta">
+              <div class="project-type">Gaming Platform</div>
+              <div class="project-name">GameForge</div>
+              <div class="project-desc">A full-featured gaming platform with a dark, immersive UI and game discovery.</div>
             </div>
-        </div>
-    </section>
-
-    <section id="about" class="section-pad">
-        <div class="container">
-            <span class="badge reveal">About Me</span>
-            <div class="about-card reveal">
-                <p class="about-text">
-                    I am Fardin Hussain, a developer who bridges the gap between <span class="highlight">design</span> and <span class="highlight">engineering</span>. 
-                    <br><br>
-                    I don't just write code; I craft digital journeys. My focus is on creating smooth, minimalistic, and immersive web experiences that look good and perform even better.
-                </p>
+            <div class="project-arrow">
+              <i class="fa-solid fa-arrow-right"></i>
             </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section id="tools" class="section" style="padding-top:0">
+    <div class="container">
+      <div class="section-label reveal">
+        <i class="fa-solid fa-circle-dot"></i> Free tools
+      </div>
+      <h2 class="section-title reveal">Built these. <em>Use them.</em></h2>
+      <div class="tools-grid">
+        <div class="tool-card reveal">
+          <div class="tool-icon">🧮</div>
+          <div class="tool-name">Scientific Calculator</div>
+          <div class="tool-desc">A proper dark-mode calculator with Basic and Scientific modes — sin, cos, tan, log, roots, powers, keyboard support, the works.</div>
+          <button class="tool-open-btn" onclick="openModal('calcModal')">
+            <i class="fa-solid fa-calculator"></i> Launch Calculator
+          </button>
         </div>
-    </section>
-
-    <section id="skills" class="section-pad">
-        <div class="container">
-            <span class="badge reveal">My Arsenal</span>
-            <h2 class="reveal" style="font-size: 2.5rem;">Technologies I Use</h2>
-            <div class="skills-grid">
-                <div class="skill-card skill-html reveal"><i class="fa-brands fa-html5"></i><h3>HTML5</h3></div>
-                <div class="skill-card skill-css reveal"><i class="fa-brands fa-css3-alt"></i><h3>CSS3</h3></div>
-                <div class="skill-card skill-js reveal"><i class="fa-brands fa-js"></i><h3>JavaScript</h3></div>
-                <div class="skill-card skill-responsive reveal"><i class="fa-solid fa-mobile-screen-button"></i><h3>Responsive Design</h3></div>
-            </div>
+        <div class="tool-card reveal">
+          <div class="tool-icon">📊</div>
+          <div class="tool-name">Expenses Tracker</div>
+          <div class="tool-desc">Track monthly spending with ₹ INR support, category breakdowns, budget alerts, and a visual pie chart. Data saved locally in your browser.</div>
+          <button class="tool-open-btn" onclick="openModal('expensesModal')">
+            <i class="fa-solid fa-chart-pie"></i> Launch Tracker
+          </button>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <section id="work" class="section-pad">
-        <div class="container">
-            <span class="badge reveal">Featured Project</span>
-            
-            <a href="https://nitu-editzzz.netlify.app" target="_blank" class="project-poster reveal">
-                <div class="poster-bg">
-                    <iframe src="https://nitu-editzzz.netlify.app" title="Project Preview"></iframe>
-                </div>
-                <div class="poster-overlay">
-                    <div style="width: 100%;">
-                        <div class="poster-header">
-                             <h3 class="poster-title">Nitu Editzzz</h3>
-                             <i class="fa-solid fa-arrow-right poster-arrow"></i>
-                        </div>
-                        <p class="poster-subtitle">Creative Portfolio Website</p>
-                    </div>
-                </div>
-            </a>
-        </div>
-    </section>
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="section-label reveal">
+        <i class="fa-solid fa-circle-dot"></i> Let's talk
+      </div>
+      <h2 class="contact-headline reveal">Got a project? <em>Let's build it.</em></h2>
+      <p class="contact-sub reveal">Reach out on any platform — I respond fast.</p>
+      <div class="contact-grid reveal">
+        <a href="tel:+918638625481" class="contact-link">
+          <i class="fa-solid fa-phone"></i>
+          <div>
+            <div class="cl-label">Phone</div>
+            <div class="cl-val">+91 86386 25481</div>
+          </div>
+        </a>
+        <a href="https://wa.me/918638625481" target="_blank" rel="noopener" class="contact-link">
+          <i class="fa-brands fa-whatsapp"></i>
+          <div>
+            <div class="cl-label">WhatsApp</div>
+            <div class="cl-val">+91 86386 25481</div>
+          </div>
+        </a>
+        <a href="https://instagram.com/fardin__hussain_" target="_blank" rel="noopener" class="contact-link">
+          <i class="fa-brands fa-instagram"></i>
+          <div>
+            <div class="cl-label">Instagram</div>
+            <div class="cl-val">@fardin__hussain_</div>
+          </div>
+        </a>
+        <a href="mailto:fardinhussain051@gmail.com" class="contact-link">
+          <i class="fa-solid fa-envelope"></i>
+          <div>
+            <div class="cl-label">Email</div>
+            <div class="cl-val">fardinhussain051@gmail.com</div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
 
-    <section id="contact" class="section-pad" style="border-top: 1px solid var(--border); text-align: center;">
-        <div class="container reveal">
-            <h2 style="font-size: 3rem; margin-bottom: 20px;">Let's Create</h2>
-            <div class="contact-row">
-                <a href="https://wa.me/918638625481" target="_blank" class="contact-btn"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
-                <a href="mailto:fardinhussain051@gmail.com" class="contact-btn"><i class="fa-solid fa-envelope"></i> Email Me</a>
-            </div>
-        </div>
-    </section>
+  <footer>
+    <div class="container">
+      <p>© 2026 Fardin Hussain &nbsp;·&nbsp; Made with intent, not a template.</p>
+    </div>
+  </footer>
 
-    <footer style="padding: 40px 0; text-align: center; color: #444; font-family: var(--font-head); font-size: 0.8rem;">
-        <p>© 2026 fardinhussain</p>
-    </footer>
+  <div class="modal-overlay" id="calcModal" onclick="backdropClose(event,'calcModal')">
+    <div class="modal-box" style="width: 100%; max-width: 420px; height: 650px; padding: 0;">
+      <button class="modal-close-btn" onclick="closeModal('calcModal')" style="position: absolute; right: 10px; top: 10px; z-index: 1000;">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <iframe src="calculator.html" title="Scientific Calculator" style="width: 100%; height: 100%; border: none; border-radius: 24px;"></iframe>
+    </div>
+  </div>
 
-    <!-- GSAP restored so animations work -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <div class="modal-overlay" id="expensesModal" onclick="backdropClose(event,'expensesModal')">
+    <div class="modal-box" style="width: 100%; max-width: 1000px; height: 80vh; padding: 0;">
+      <button class="modal-close-btn" onclick="closeModal('expensesModal')" style="position: absolute; right: 15px; top: 15px; z-index: 1000;">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <iframe src="https://your-deployed-expense-tracker-url.netlify.app" title="Expense Tracker" style="width: 100%; height: 100%; border: none; border-radius: 24px;"></iframe>
+    </div>
+  </div>
 
-<script src="script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="script.js"></script>
+
 </body>
-</html>
+    </html>
+                                                   
