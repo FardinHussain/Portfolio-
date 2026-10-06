@@ -3,276 +3,617 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="google-site-verification" content="jX5qkN8E3rgNWh8iSGn1IzztdrBrMSE2dgx6izjUUWM" />
-  <meta name="description" content="Fardin Hussain — frontend web developer from Assam, India. Building aesthetic, high-performance web experiences. View my projects and tools.">
-  <meta name="keywords" content="Fardin Hussain, frontend developer, web developer portfolio, HTML CSS JavaScript, freelance web developer India, Assam developer, TechRift AI">
+  <meta name="theme-color" content="#ffffff">
+
+  <meta name="description" content="Fardin Hussain, an AI-assisted full-stack developer from Assam, India. I build websites, web apps and digital products for businesses, institutions, creators and professionals.">
+  <meta name="keywords" content="Fardin Hussain, web developer, full-stack developer, freelance web developer India, Assam web developer, React, Node.js, AI-assisted development">
   <meta name="author" content="Fardin Hussain">
   <meta name="robots" content="index, follow">
-  <meta property="og:title" content="Fardin Hussain | Frontend Developer">
-  <meta property="og:description" content="Frontend developer from Assam — I build things that look good and run fast.">
+
+  <meta property="og:title" content="Fardin Hussain | Full-Stack Web Developer">
+  <meta property="og:description" content="Websites, full-stack web apps and digital products, built with modern web tech and an AI-assisted workflow.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://fardinhussain.netlify.app/">
+  <meta name="twitter:card" content="summary">
+
   <link rel="canonical" href="https://fardinhussain.netlify.app/">
-  <title>Fardin Hussain | Frontend Developer</title>
+
+  <title>Fardin Hussain | Full-Stack Web Developer</title>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Fardin Hussain",
+    "url": "https://fardinhussain.netlify.app/",
+    "jobTitle": "Full-Stack Web Developer",
+    "email": "mailto:fardinhussain051@gmail.com",
+    "address": { "@type": "PostalAddress", "addressRegion": "Assam", "addressCountry": "IN" },
+    "sameAs": ["https://github.com/FardinHussain", "https://instagram.com/fardin__hussain_"]
+  }
+  </script>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,600;0,9..144,800;1,9..144,300;1,9..144,600&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Mono:wght@400;500&family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-  <div class="bg-layer"></div>
-
-  <nav>
-    <div class="container nav-inner">
-      <div class="logo">
+  <header class="site-header" id="top">
+    <div class="container nav-wrap">
+      <a class="logo" href="#top" aria-label="Fardin Hussain home">
         Fardin<span>.</span>dev
-      </div>
-      <div class="nav-links">
+      </a>
+
+      <button class="menu-toggle" type="button" aria-label="Open navigation" aria-controls="site-nav" aria-expanded="false">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+      <nav class="site-nav" id="site-nav" aria-label="Primary navigation">
         <a href="#about">About</a>
-        <a href="#skills">Skills</a>
+        <a href="#services">Services</a>
         <a href="#work">Work</a>
-        <a href="#tools">Tools</a>
-        <a href="#contact">Contact</a>
-      </div>
+        <a href="#process">Process</a>
+        <a href="#skills">Stack</a>
+        <a href="#credentials">Learning</a>
+        <a class="nav-cta" href="#contact">Let's work</a>
+      </nav>
     </div>
-  </nav>
+  </header>
 
-  <section id="hero">
-    <div class="container" style="position:relative">
-      <div class="hero-inner">
-        <div class="hero-tag">
-          Available for work
-        </div>
-        <h1 class="hero-title" id="heroTitle">
-          Hi, I'm<br>
-          <em>Fardin.</em><br>
-          I build for the web.
-        </h1>
-        <p class="hero-desc">
-          Frontend developer from <strong>Assam, India</strong> — turning ideas into clean, fast, and memorable web experiences. I care about the details that most people don't notice but everyone feels.
-        </p>
-        <div class="hero-cta">
-          <a href="#work" class="btn-primary">See my work <i class="fa-solid fa-arrow-down"></i></a>
-          <a href="#contact" class="btn-ghost">Get in touch <i class="fa-solid fa-arrow-right"></i></a>
-        </div>
-      </div>
-      <div class="hero-scroll">
-        <span>scroll</span>
-        <i class="fa-solid fa-chevron-down" style="font-size:0.6rem"></i>
-      </div>
-    </div>
-  </section>
+  <main id="main">
+    <section class="hero section">
+      <div class="hero-grid container">
+        <div class="hero-copy reveal">
+          <div class="eyebrow">
+            <span class="status-dot" aria-hidden="true"></span>
+            Available for freelance projects
+          </div>
 
-  <style>
-    @keyframes pulse {
-      0%, 100% { opacity: 1; }
-      50% { opacity: .3; }
-    }
-  </style>
+          <p class="hero-role">AI-ASSISTED FULL-STACK DEVELOPER · INDIA</p>
 
-  <section id="about" class="section">
-    <div class="container">
-      <div class="section-label reveal">
-        <i class="fa-solid fa-circle-dot"></i> About me
-      </div>
-      <h2 class="section-title reveal">Not your average <em>developer</em></h2>
-      <div class="about-grid">
-        <div class="about-text-main reveal">
-          <p>
-            I picked up web development because I wanted to make things — real, working things that people could actually use. That itch hasn't gone away since.
+          <h1>
+            I turn ideas into
+            <em>websites that ship.</em>
+          </h1>
+
+          <p class="hero-text">
+            I'm Fardin. I design and build responsive websites and full-stack web apps,
+            using AI to accelerate exploration and coding — while I handle the architecture,
+            decisions, testing and final polish.
           </p>
-          <p>
-            Beyond the code, I run <span class="hl">TechRift AI & Career Services</span>, a brand I built around helping people get smarter about AI tools and navigate career decisions in tech. Two things I spend a lot of time thinking about anyway.
-          </p>
-          <p>
-            When I'm not pushing pixels or debugging at midnight, I'm usually experimenting with new tools, learning from Anthropic's ecosystem, or writing content that doesn't waste your time.
-          </p>
+
+          <div class="hero-actions">
+            <a href="#work" class="btn btn-primary">
+              Explore my work
+              <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+            </a>
+            <a href="#contact" class="btn btn-secondary">
+              Have a project?
+            </a>
+          </div>
+
+          <div class="hero-proof" aria-label="Developer highlights">
+            <div>
+              <strong>03</strong>
+              <span>Selected live projects</span>
+            </div>
+            <div>
+              <strong>Full-stack</strong>
+              <span>Frontend → backend → deploy</span>
+            </div>
+            <div>
+              <strong>AI-assisted</strong>
+              <span>Faster iteration, human-led</span>
+            </div>
+          </div>
         </div>
-        <div class="about-aside">
-          <div class="fact-card reveal">
-            <div class="fact-label">Based in</div>
-            <div class="fact-value">🇮🇳 Assam, India</div>
+
+        <div class="hero-visual reveal" aria-label="AI-assisted development workspace">
+          <div class="hero-orbit orbit-one"></div>
+          <div class="hero-orbit orbit-two"></div>
+
+          <div class="code-window">
+            <div class="window-bar">
+              <span></span><span></span><span></span>
+              <div class="window-title">fardin.dev / build.js</div>
+            </div>
+
+            <div class="window-body">
+              <div class="code-line dim"><span>01</span><span><b>const</b> brief = <i>"client idea"</i>;</span></div>
+              <div class="code-line"><span>02</span><span><b>const</b> ai = <i>assist(build)</i>;</span></div>
+              <div class="code-line"><span>03</span><span><b>const</b> design = <i>humanReview(ai)</i>;</span></div>
+              <div class="code-line"><span>04</span><span><b>const</b> product = <i>test(design)</i>;</span></div>
+              <div class="code-line"><span>05</span><span></span></div>
+              <div class="code-line"><span>06</span><span><b>ship</b>(product); <em>// live</em></span></div>
+              <div class="code-line dim"><span>07</span><span>✓ responsive &nbsp; ✓ tested &nbsp; ✓ deployed</span></div>
+            </div>
+
+            <div class="window-footer">
+              <span><i class="fa-solid fa-circle-check"></i> Build ready</span>
+              <span>HTML · CSS · JS · React · Node</span>
+            </div>
           </div>
-          <div class="fact-card reveal">
-            <div class="fact-label">Also runs</div>
-            <div class="fact-value" style="color:var(--accent)">TechRift AI & Career Services</div>
+
+          <div class="floating-card floating-card-one">
+            <span class="mini-icon"><i class="fa-solid fa-code"></i></span>
+            <div>
+              <strong>Build</strong>
+              <small>Frontend + backend</small>
+            </div>
           </div>
-          <div class="fact-card reveal">
-            <div class="fact-label">Currently into</div>
-            <div class="fact-value">Claude, prompt engineering, building tools that solve real problems</div>
-          </div>
-          <div class="fact-card reveal">
-            <div class="fact-label">Status</div>
-            <div class="fact-value" style="display:flex;align-items:center;gap:8px">
-              <span style="display:inline-block;width:8px;height:8px;background:var(--accent);border-radius:50%;animation:pulse 2s infinite"></span>
-              Open to freelance & collaborations
+
+          <div class="floating-card floating-card-two">
+            <span class="mini-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></span>
+            <div>
+              <strong>AI-assisted</strong>
+              <small>Explore · code · debug</small>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="skills" class="section" style="padding-top:0">
-    <div class="container">
-      <div class="section-label reveal">
-        <i class="fa-solid fa-circle-dot"></i> My stack
-      </div>
-      <h2 class="section-title reveal">Technologies <em>I reach for</em></h2>
-      <div class="skills-grid">
-        <div class="skill-card skill-html reveal">
-          <i class="fa-brands fa-html5"></i><span>HTML5</span>
-        </div>
-        <div class="skill-card skill-css reveal">
-          <i class="fa-brands fa-css3-alt"></i><span>CSS3</span>
-        </div>
-        <div class="skill-card skill-js reveal">
-          <i class="fa-brands fa-js"></i><span>JavaScript</span>
-        </div>
-        <div class="skill-card skill-rwd reveal">
-          <i class="fa-solid fa-mobile-screen-button"></i><span>Responsive Design</span>
-        </div>
-        <div class="skill-card skill-ai reveal">
-          <i class="fa-solid fa-robot"></i><span>AI Tools</span>
-        </div>
+    <div class="trust-strip">
+      <div class="container trust-strip-inner">
+        <span>Built for</span>
+        <strong>Startups</strong>
+        <i></i>
+        <strong>Local businesses</strong>
+        <i></i>
+        <strong>Colleges &amp; institutions</strong>
+        <i></i>
+        <strong>Creators &amp; coaches</strong>
+        <i></i>
+        <strong>Professionals</strong>
       </div>
     </div>
-  </section>
 
-  <section id="work" class="section" style="padding-top:0">
-    <div class="container">
-      <div class="section-label reveal">
-        <i class="fa-solid fa-circle-dot"></i> Selected work
-      </div>
-      <h2 class="section-title reveal">Things I've <em>shipped</em></h2>
-      <div class="projects-grid">
-        <a href="https://gameforgeee.netlify.app" target="_blank" rel="noopener" class="project-card reveal">
-          <div class="project-preview">
-            <iframe src="https://gameforgeee.netlify.app" title="GameForge Preview" loading="lazy"></iframe>
+    <section class="section section-soft" id="about">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div class="section-kicker">01 — About</div>
+          <h2>Small enough to care. <em>Technical enough to build.</em></h2>
+        </div>
+
+        <div class="about-layout">
+          <div class="about-main reveal">
+            <p class="lead">
+              I don't want my portfolio to tell you that I can build things.
+              I want the work below to show you.
+            </p>
+            <p>
+              I build responsive websites, interfaces and full-stack web applications with a
+              practical approach: understand the goal, make the experience clear, build it,
+              test it, and put it online.
+            </p>
+            <p>
+              AI is part of my workflow, not a substitute for understanding. I use it to
+              research, explore approaches, generate drafts, debug and iterate faster — then
+              I review the output, integrate it and test what actually ships.
+            </p>
           </div>
-          <div class="project-info">
-            <div class="project-meta">
-              <div class="project-type">Gaming Platform</div>
-              <div class="project-name">GameForge</div>
-              <div class="project-desc">A full-featured gaming platform with a dark, immersive UI and game discovery.</div>
+
+          <div class="about-aside reveal">
+            <div class="info-card">
+              <span>Role</span>
+              <strong>AI-assisted full-stack developer</strong>
             </div>
-            <div class="project-arrow">
-              <i class="fa-solid fa-arrow-right"></i>
+            <div class="info-card">
+              <span>Based in</span>
+              <strong>Assam, India · Working remotely</strong>
+            </div>
+            <div class="info-card">
+              <span>Best fit</span>
+              <strong>Business sites · products · web apps</strong>
+            </div>
+            <div class="info-card">
+              <span>Availability</span>
+              <strong><span class="status-dot inline"></span> Open to selected projects</strong>
             </div>
           </div>
-        </a>
-      </div>
-    </div>
-  </section>
-
-<<<<<<< HEAD
-  <section id="tools" class="section" style="padding-top:0">
-    <div class="container">
-      <div class="section-label reveal">
-        <i class="fa-solid fa-circle-dot"></i> Free tools
-      </div>
-      <h2 class="section-title reveal">Built these. <em>Use them.</em></h2>
-      <div class="tools-grid">
-        <div class="tool-card reveal">
-          <div class="tool-icon">🧮</div>
-          <div class="tool-name">Scientific Calculator</div>
-          <div class="tool-desc">A proper dark-mode calculator with Basic and Scientific modes — sin, cos, tan, log, roots, powers, keyboard support, the works.</div>
-          <button class="tool-open-btn" onclick="openModal('calcModal')">
-            <i class="fa-solid fa-calculator"></i> Launch Calculator
-          </button>
         </div>
-        <div class="tool-card reveal">
-          <div class="tool-icon">📊</div>
-          <div class="tool-name">Expenses Tracker</div>
-          <div class="tool-desc">Track monthly spending with ₹ INR support, category breakdowns, budget alerts, and a visual pie chart. Data saved locally in your browser.</div>
-          <button class="tool-open-btn" onclick="openModal('expensesModal')">
-            <i class="fa-solid fa-chart-pie"></i> Launch Tracker
-          </button>
+
+        <div class="value-grid reveal">
+          <div class="value-item">
+            <span class="value-icon"><i class="fa-solid fa-bullseye"></i></span>
+            <div><strong>Goal first</strong><p>I build around what the site needs to achieve, not just how it looks.</p></div>
+          </div>
+          <div class="value-item">
+            <span class="value-icon"><i class="fa-solid fa-mobile-screen-button"></i></span>
+            <div><strong>Responsive by default</strong><p>The experience is designed to work from phone to desktop.</p></div>
+          </div>
+          <div class="value-item">
+            <span class="value-icon"><i class="fa-solid fa-rocket"></i></span>
+            <div><strong>Built to ship</strong><p>I care about deployment, polish and the details between “works” and “ready”.</p></div>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-=======
->>>>>>> d322339da6d47626579af20f0d9ca6710f7d2cdb
-  <section id="contact" class="section">
-    <div class="container">
-      <div class="section-label reveal">
-        <i class="fa-solid fa-circle-dot"></i> Let's talk
-      </div>
-      <h2 class="contact-headline reveal">Got a project? <em>Let's build it.</em></h2>
-      <p class="contact-sub reveal">Reach out on any platform — I respond fast.</p>
-      <div class="contact-grid reveal">
-        <a href="tel:+918638625481" class="contact-link">
-          <i class="fa-solid fa-phone"></i>
-          <div>
-            <div class="cl-label">Phone</div>
-            <div class="cl-val">+91 86386 25481</div>
-          </div>
-        </a>
-        <a href="https://wa.me/918638625481" target="_blank" rel="noopener" class="contact-link">
-          <i class="fa-brands fa-whatsapp"></i>
-          <div>
-            <div class="cl-label">WhatsApp</div>
-            <div class="cl-val">+91 86386 25481</div>
-          </div>
-        </a>
-        <a href="https://instagram.com/fardin__hussain_" target="_blank" rel="noopener" class="contact-link">
-          <i class="fa-brands fa-instagram"></i>
-          <div>
-            <div class="cl-label">Instagram</div>
-            <div class="cl-val">@fardin__hussain_</div>
-          </div>
-        </a>
-        <a href="mailto:fardinhussain051@gmail.com" class="contact-link">
-          <i class="fa-solid fa-envelope"></i>
-          <div>
-            <div class="cl-label">Email</div>
-            <div class="cl-val">fardinhussain051@gmail.com</div>
-          </div>
-        </a>
-      </div>
-    </div>
-  </section>
+    <section class="section" id="services">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div class="section-kicker">02 — Services</div>
+          <h2>What I can build <em>for you.</em></h2>
+        </div>
 
-  <footer>
-    <div class="container">
-      <p>© 2026 Fardin Hussain &nbsp;·&nbsp; Made with intent, not a template.</p>
+        <div class="services-grid">
+          <article class="service-card reveal">
+            <div class="service-number">01</div>
+            <div class="service-icon"><i class="fa-solid fa-globe"></i></div>
+            <h3>Business websites</h3>
+            <p>Professional websites for businesses, institutions, creators and personal brands — clear on mobile and polished on desktop.</p>
+            <div class="tag-row"><span>Responsive</span><span>SEO-ready</span><span>Fast UI</span></div>
+          </article>
+
+          <article class="service-card reveal">
+            <div class="service-number">02</div>
+            <div class="service-icon"><i class="fa-solid fa-layer-group"></i></div>
+            <h3>Web apps & products</h3>
+            <p>Interactive applications with authentication, APIs, databases, dashboards, carts, forms and other real functionality.</p>
+            <div class="tag-row"><span>React</span><span>Node.js</span><span>MongoDB</span></div>
+          </article>
+
+          <article class="service-card reveal">
+            <div class="service-number">03</div>
+            <div class="service-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+            <h3>AI-assisted builds</h3>
+            <p>Fast idea-to-prototype work using AI as a development accelerator — with human review, testing and iteration before launch.</p>
+            <div class="tag-row"><span>Rapid prototyping</span><span>AI workflow</span><span>Iteration</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-soft" id="work">
+      <div class="container">
+        <div class="work-top">
+          <div class="section-heading reveal">
+            <div class="section-kicker">03 — Selected work</div>
+            <h2>Three builds. <em>Different problems.</em></h2>
+          </div>
+          <p class="work-note reveal">I keep the showcase intentionally small: each project demonstrates a different kind of client work and has a live deployment you can open.</p>
+        </div>
+
+        <div class="projects-grid">
+          <article class="project-card project-card-featured reveal">
+            <a class="project-visual visual-kicks" href="https://kicksunited.onrender.com" target="_blank" rel="noopener noreferrer" aria-label="Open KicksUnited live project">
+              <div class="project-browser">
+                <div class="browser-top">
+                  <div class="browser-dots"><span></span><span></span><span></span></div>
+                  <div class="browser-address">kicksunited</div>
+                  <span class="browser-action"><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+                </div>
+                <div class="kicks-screen">
+                  <div class="kicks-nav">
+                    <strong>KICKS<span>UNITED</span></strong>
+                    <span>Marketplace</span><span>Collections</span><span>Community</span>
+                  </div>
+                  <div class="kicks-hero">
+                    <div>
+                      <small>AUTHENTIC SNEAKER MARKET</small>
+                      <h3>Find the pair<br><em>worth chasing.</em></h3>
+                    </div>
+                    <div class="shoe-shape"></div>
+                  </div>
+                </div>
+              </div>
+              <span class="project-badge">Marketplace · Full-stack</span>
+            </a>
+
+            <div class="project-body">
+              <div class="project-head">
+                <div>
+                  <span class="project-index">01</span>
+                  <h3>KicksUnited</h3>
+                </div>
+                <a class="icon-link" href="https://github.com/FardinHussain/KicksUnited" target="_blank" rel="noopener noreferrer" aria-label="KicksUnited source code">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+              </div>
+
+              <p>
+                A sneaker marketplace concept built to demonstrate a product-style experience across customer,
+                seller and admin flows — from discovery and cart to bidding and management.
+              </p>
+
+              <div class="project-tags">
+                <span>React</span><span>Vite</span><span>Node.js</span><span>Express</span><span>MongoDB</span>
+              </div>
+
+              <a class="text-link" href="https://kicksunited.onrender.com" target="_blank" rel="noopener noreferrer">
+                Live demo
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <a class="project-visual visual-kitchen" href="https://A-Z-kitchen.netlify.app" target="_blank" rel="noopener noreferrer" aria-label="Open A-Z Kitchen live project">
+              <div class="project-browser">
+                <div class="browser-top">
+                  <div class="browser-dots"><span></span><span></span><span></span></div>
+                  <div class="browser-address">a-z-kitchen-fullstack</div>
+                  <span class="browser-action"><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+                </div>
+                <div class="kitchen-screen">
+                  <div class="kitchen-topbar"><strong>A-Z <span>KITCHEN</span></strong><span>Menu</span><span>Orders</span><span>Cart</span></div>
+                  <div class="kitchen-content">
+                    <div><small>FRESH. SIMPLE. LOCAL.</small><h3>Good food,<br><em>made easy.</em></h3><span class="fake-btn">Order now</span></div>
+                    <div class="food-orb"><span>🍲</span></div>
+                  </div>
+                  <div class="kitchen-cards"><span></span><span></span><span></span></div>
+                </div>
+              </div>
+              <span class="project-badge">Food ordering · Full-stack</span>
+            </a>
+
+            <div class="project-body">
+              <div class="project-head">
+                <div>
+                  <span class="project-index">02</span>
+                  <h3>A-Z Kitchen</h3>
+                </div>
+                <a class="icon-link" href="https://A-Z-kitchen.netlify.app" target="_blank" rel="noopener noreferrer" aria-label="A-Z Kitchen live website">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+              </div>
+
+              <p>
+                A food-ordering app with a browsable menu, cart and order flow, backed by a
+                Node.js and Express server and deployed online.
+              </p>
+
+              <div class="project-tags">
+                <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Node.js</span><span>Express</span>
+              </div>
+
+              <a class="text-link" href="https://A-Z-kitchen.netlify.app" target="_blank" rel="noopener noreferrer">
+                Live demo
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <a class="project-visual visual-botany" href="https://botany-wall-magazine-morigaon-college.netlify.app" target="_blank" rel="noopener noreferrer" aria-label="Open Botany Digital Wall Magazine">
+              <div class="project-browser">
+                <div class="browser-top">
+                  <div class="browser-dots"><span></span><span></span><span></span></div>
+                  <div class="browser-address">botany-wall-magazine</div>
+                  <span class="browser-action"><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+                </div>
+                <div class="botany-screen">
+                  <div class="botany-header"><span>BIRINAA DIGITAL</span><small>BOTANY DEPARTMENT</small></div>
+                  <div class="botany-content">
+                    <div><small>FEATURED TOPIC</small><h3>Plant communication<br><em>and memory.</em></h3><p>Articles · Research · Timeline</p></div>
+                    <div class="leaf-art">✦</div>
+                  </div>
+                  <div class="botany-footer"><span>Digital Wall Magazine</span><span>Scan · Read · Explore</span></div>
+                </div>
+              </div>
+              <span class="project-badge">Editorial · Institution</span>
+            </a>
+
+            <div class="project-body">
+              <div class="project-head">
+                <div>
+                  <span class="project-index">03</span>
+                  <h3>Botany Digital Wall Magazine</h3>
+                </div>
+                <a class="icon-link" href="https://botany-wall-magazine-morigaon-college.netlify.app" target="_blank" rel="noopener noreferrer" aria-label="Botany Digital Wall Magazine live website">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+              </div>
+
+              <p>
+                A digital wall magazine for a college botany department, designed so readers
+                can scan a QR code and read articles comfortably on their phones.
+              </p>
+
+              <div class="project-tags">
+                <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Responsive UI</span>
+              </div>
+
+              <a class="text-link" href="https://botany-wall-magazine-morigaon-college.netlify.app" target="_blank" rel="noopener noreferrer">
+                Live demo
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </article>
+        </div>
+
+        <div class="project-note reveal">
+          <i class="fa-solid fa-circle-info"></i>
+          <span>These are my strongest pieces. More code and experiments are on GitHub, and some demos may take a few seconds to wake up on first load.</span>
+          <a href="https://github.com/FardinHussain" target="_blank" rel="noopener noreferrer">GitHub profile <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div class="section-kicker">04 — Stack</div>
+          <h2>The tools behind <em>the work.</em></h2>
+        </div>
+
+        <div class="skills-layout">
+          <div class="skills-intro reveal">
+            <p>
+              A practical stack for shipping websites and web apps. AI accelerates the workflow;
+              fundamentals, testing and final decisions stay human-led.
+            </p>
+            <div class="stack-note"><i class="fa-solid fa-sparkles"></i> AI-assisted ≠ AI-dependent</div>
+          </div>
+
+          <div class="skills-list">
+            <div class="skill-row reveal">
+              <span class="skill-title">Frontend</span>
+              <div class="skill-pills"><span>HTML5</span><span>CSS3</span><span>JavaScript + AI</span><span>Responsive UI</span></div>
+            </div>
+            <div class="skill-row reveal">
+              <span class="skill-title">Frameworks</span>
+              <div class="skill-pills"><span>React</span><span>Vite</span><span>Tailwind CSS</span></div>
+            </div>
+            <div class="skill-row reveal">
+              <span class="skill-title">Backend</span>
+              <div class="skill-pills"><span>Node.js</span><span>Express</span><span>REST APIs</span><span>Authentication</span></div>
+            </div>
+            <div class="skill-row reveal">
+              <span class="skill-title">Data</span>
+              <div class="skill-pills"><span>MongoDB</span><span>Mongoose</span></div>
+            </div>
+            <div class="skill-row reveal">
+              <span class="skill-title">Ship</span>
+              <div class="skill-pills"><span>Git</span><span>GitHub</span><span>Netlify</span><span>Render</span><span>Debugging</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-dark process-section" id="process">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div class="section-kicker">05 — Process</div>
+          <h2>A simple path from <em>idea → live.</em></h2>
+        </div>
+
+        <div class="process-grid">
+          <div class="process-step reveal">
+            <span>01</span>
+            <i class="fa-solid fa-message"></i>
+            <h3>Understand</h3>
+            <p>Clarify the goal, audience, content, features and what success should look like.</p>
+          </div>
+          <div class="process-step reveal">
+            <span>02</span>
+            <i class="fa-solid fa-pen-ruler"></i>
+            <h3>Shape</h3>
+            <p>Turn the brief into a clear structure, visual direction and practical feature plan.</p>
+          </div>
+          <div class="process-step reveal">
+            <span>03</span>
+            <i class="fa-solid fa-code"></i>
+            <h3>Build</h3>
+            <p>Use modern web tools and AI-assisted iteration to move quickly without skipping the fundamentals.</p>
+          </div>
+          <div class="process-step reveal">
+            <span>04</span>
+            <i class="fa-solid fa-circle-check"></i>
+            <h3>Test & ship</h3>
+            <p>Check responsiveness, interactions and key flows, then deploy the finished experience.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<section class="section section-soft" id="credentials">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div class="section-kicker">06 — Learning</div>
+          <h2>Curious about AI. <em>Serious about building.</em></h2>
+        </div>
+
+        <div class="credentials-intro reveal">
+          <p>
+            Projects are the main proof of my development skills. These highlights show the
+            learning and technology events that support the work.
+          </p>
+        </div>
+
+        <div class="credentials-grid">
+          <article class="credential-card credential-featured reveal">
+            <div class="credential-top">
+              <span class="credential-type">Ongoing learning</span>
+              <span class="credential-mark"><i class="fa-solid fa-brain"></i></span>
+            </div>
+            <h3>AI Fundamentals · Jio Institute</h3>
+            <p>
+              Studying AI foundations to understand concepts behind modern AI systems and
+              become a better AI-assisted developer.
+            </p>
+            <div class="credential-meta"><span>Ongoing</span><span>Jio Institute</span></div>
+          </article>
+
+          <article class="credential-card reveal">
+            <div class="credential-top">
+              <span class="credential-type">AI quiz · 2026</span>
+              <span class="credential-mark"><i class="fa-solid fa-trophy"></i></span>
+            </div>
+            <a class="cert-thumb" href="images/certificates/quizoff-2026.jpg" data-lightbox aria-label="View QuizOff 2026 certificate">
+              <img src="images/certificates/quizoff-2026.jpg" alt="QuizOff 2026 certificate of participation awarded to Fardin Hussain" loading="lazy">
+              <span><i class="fa-solid fa-magnifying-glass-plus"></i> View certificate</span>
+            </a>
+            <h3>QuizOff 2026</h3>
+            <p>Participated in the AI-focused QuizOff 2026 organised by CampusCrew and hosted on Unstop.</p>
+            <div class="credential-meta"><span>19 July 2026</span><span>Unstop · CampusCrew</span></div>
+          </article>
+
+          <article class="credential-card reveal">
+            <div class="credential-top">
+              <span class="credential-type">Technology quiz · 2026</span>
+              <span class="credential-mark"><i class="fa-solid fa-code"></i></span>
+            </div>
+            <a class="cert-thumb" href="images/certificates/quizverse-2026.jpg" data-lightbox aria-label="View Unstop Quizverse 2026 certificate">
+              <img src="images/certificates/quizverse-2026.jpg" alt="Unstop Quizverse 2026 certificate of participation awarded to Fardin Hussain" loading="lazy">
+              <span><i class="fa-solid fa-magnifying-glass-plus"></i> View certificate</span>
+            </a>
+            <h3>Unstop Quizverse 2026</h3>
+            <p>Participated in Unstop Quizverse 2026 through Anandaram Dhekial Phookan College.</p>
+            <div class="credential-meta"><span>Participation</span><span>Unstop</span></div>
+          </article>
+        </div>
+
+        <div class="credential-footnote reveal">
+          <i class="fa-solid fa-circle-info"></i>
+          <span>The older SoloLearn HTML certificate is intentionally not shown because the uploaded certificate carries a different name. A corrected certificate can be added later.</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-section section-dark" id="contact">
+      <div class="container">
+        <div class="contact-content reveal">
+          <div class="section-kicker">07 — Contact</div>
+          <h2>Have a useful idea?<br><em>Let's build it.</em></h2>
+          <p>
+            Send me the idea, the problem you want to solve and any deadline you have.
+            I'll tell you what I can build and how I'd approach it.
+          </p>
+
+          <div class="contact-actions">
+            <a class="btn btn-light" href="mailto:fardinhussain051@gmail.com">
+              Start with email <i class="fa-solid fa-arrow-right"></i>
+            </a>
+            <a class="btn btn-outline-light" href="https://wa.me/918638625481" target="_blank" rel="noopener noreferrer">
+              WhatsApp <i class="fa-brands fa-whatsapp"></i>
+            </a>
+          </div>
+
+          <div class="contact-links">
+            <a href="mailto:fardinhussain051@gmail.com"><i class="fa-solid fa-envelope"></i> fardinhussain051@gmail.com</a>
+            <a href="https://github.com/FardinHussain" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> GitHub</a>
+            <a href="https://instagram.com/fardin__hussain_" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i> Instagram</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>© <span id="year"></span> Fardin Hussain</span>
+      <span>Built with code + AI · Human-reviewed</span>
     </div>
   </footer>
-<<<<<<< HEAD
 
-  <div class="modal-overlay" id="calcModal" onclick="backdropClose(event,'calcModal')">
-    <div class="modal-box" style="width: 100%; max-width: 420px; height: 650px; padding: 0;">
-      <button class="modal-close-btn" onclick="closeModal('calcModal')" style="position: absolute; right: 10px; top: 10px; z-index: 1000;">
-        <i class="fa-solid fa-xmark"></i>
-      </button>
-      <iframe src="calculator.html" title="Scientific Calculator" style="width: 100%; height: 100%; border: none; border-radius: 24px;"></iframe>
-    </div>
-  </div>
-
-  <div class="modal-overlay" id="expensesModal" onclick="backdropClose(event,'expensesModal')">
-    <div class="modal-box" style="width: 100%; max-width: 1000px; height: 80vh; padding: 0;">
-      <button class="modal-close-btn" onclick="closeModal('expensesModal')" style="position: absolute; right: 15px; top: 15px; z-index: 1000;">
-        <i class="fa-solid fa-xmark"></i>
-      </button>
-      <iframe src="https://your-deployed-expense-tracker-url.netlify.app" title="Expense Tracker" style="width: 100%; height: 100%; border: none; border-radius: 24px;"></iframe>
-    </div>
-  </div>
-
-=======
->>>>>>> d322339da6d47626579af20f0d9ca6710f7d2cdb
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
   <script src="script.js"></script>
-
 </body>
-<<<<<<< HEAD
 </html>
-=======
-    </html>
-                                                   
->>>>>>> d322339da6d47626579af20f0d9ca6710f7d2cdb
